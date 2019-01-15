@@ -29,8 +29,8 @@ npm install mapir-react-native-sdk
 
 ## Platform Specific Installation Guides
 
-* [Android](https://github.com/cedarstudios/cedarmaps-react-native-sdk/blob/master/android-install.md)
-* [iOS](https://github.com/cedarstudios/cedarmaps-react-native-sdk/blob/master/ios-install.md)
+* [Android](https://github.com/map-ir/mapir-mapbox/blob/master/android/install.md)
+* [iOS](https://github.com/map-ir/mapir-mapbox/blob/master/ios/install.md)
 
 Here’s the complete code to display a map:
 
