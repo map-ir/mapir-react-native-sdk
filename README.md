@@ -6,7 +6,7 @@
 
 ## What is Mapir?
 
-See [map.ir](https://corp.map.ir)
+See [map.ir](http://corp.map.ir)
 
 
 ## Table of Contents
