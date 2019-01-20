@@ -47,9 +47,11 @@ export default class App extends Component<{}> {
         return (
             <View style={styles.container}>
                 <Mapir
+		    accessToken={'YOUR ACCESS TOKEN'}
                     zoomLevel={13}
                     centerCoordinate={[51.422548, 35.732573]}
-                    style={styles.container}>
+                    style={styles.container}
+                    accessToken{'YOUR ACCESS TOKEN'}>
                 </Mapir>
             </View>
         );

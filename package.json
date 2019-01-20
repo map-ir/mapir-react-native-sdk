@@ -1,6 +1,6 @@
 {
   "name": "mapir-react-native-sdk",
-  "version": "1.1.8",
+  "version": "1.2.1",
   "main": "src/index.js",
   "_phantomChildren": {
     "@babel/core": "7.2.2",
@@ -137,7 +137,8 @@
     "ws": "1.1.5",
     "xmldoc": "0.4.0",
     "xpipe": "1.0.5",
-    "yargs": "9.0.1"
+    "yargs": "9.0.1",
+    "prop-types": "15.6.2"
   },
   "_requested": {
     "type": "tag",
@@ -155,7 +156,7 @@
   "author": "reyhane masumi <r.masumi94@gmail.com>",
   "bundleDependencies": false,
   "dependencies": {
-    "mapir-mapbox": "1.0.1"
+    "mapir-mapbox": "1.0.5"
   },
   "deprecated": false,
   "devDependencies": {
@@ -179,6 +180,10 @@
     "javascript"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/map-ir/mapir-react-native-sdk"
+  },
   "scripts": {
     "lint": "eslint src test"
   },
