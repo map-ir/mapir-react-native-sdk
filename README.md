@@ -4,6 +4,10 @@
 
 # Mapir SDK for React Native
 
+## What is Mapir?
+
+See [map.ir](https://corp.map.ir)
+
 
 ## Table of Contents
 - [Installation](#installation)
@@ -31,6 +35,7 @@ npm install mapir-react-native-sdk
 
 * [Android](https://github.com/map-ir/mapir-mapbox/blob/master/android/install.md)
 * [iOS](https://github.com/map-ir/mapir-mapbox/blob/master/ios/install.md)
+* [example](https://github.com/map-ir/Mapir-react-native-example)
 
 Here’s the complete code to display a map:
 
