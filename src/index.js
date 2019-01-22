@@ -3,8 +3,6 @@ import Mapbox from './../../mapir-mapbox'
 import {Platform, View} from './../../react-native'
 import PropTypes from 'prop-types';
 
-Mapbox.setAccessToken('pk.mapir');
-
 const instructions = Platform.select({
     ios: true,
     android: false,
