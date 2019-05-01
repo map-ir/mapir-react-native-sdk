@@ -3,6 +3,8 @@ import Mapbox from './../../mapir-mapbox'
 import {Platform, View} from './../../react-native'
 import PropTypes from 'prop-types';
 import Marker from './../components/marker'
+import ShapeSource from './../components/shapeSource';
+import LineLayer from './../components/lineLayer';
 
 const instructions = Platform.select({
     ios: true,
@@ -34,5 +36,7 @@ class Mapir extends Component<{}> {
 }
 
 Mapir.Marker = Marker
+Mapir.ShapeSource = ShapeSource
+Mapir.LineLayer = LineLayer
 
 export default Mapir

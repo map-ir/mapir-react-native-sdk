@@ -5,6 +5,7 @@
 # Mapir SDK for React Native
 
 ## What is Mapir?
+
 See [map.ir](http://corp.map.ir)
 
 
@@ -51,7 +52,7 @@ export default class App extends Component<{}> {
         return (
             <View style={styles.container}>
                 <Mapir
-		            accessToken={'YOUR ACCESS TOKEN'}
+		    accessToken={'YOUR ACCESS TOKEN'}
                     zoomLevel={13}
                     centerCoordinate={[51.422548, 35.732573]}
                     style={styles.container}>
@@ -68,63 +69,7 @@ const styles = StyleSheet.create({
 });
 ```
 
-Here’s the complete code to display a map with static and dynamic marker:
-```js
 
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View, Image} from 'react-native';
-import Mapir from 'mapir-react-native-sdk'
-
-type Props = {};
-export default class App extends Component<{}> {
-    constructor(props) {
-        super(props);
-        this.state = {
-            markers: [
-                { latitude: 51.422548, longitude: 35.732573},
-            ],
-        };
-    }
-
-    addMarker(coordinates) {
-        this.setState({
-            markers: [...this.state.markers ,{ latitude: coordinates[0], longitude: coordinates[1]}]
-        });
-    }
-
-    render() {
-        return (
-            <View style={styles.container}>
-                <Mapir
-                    accessToken={'YOUR ACCESS TOKEN'}
-                    zoomLevel={13}
-                    centerCoordinate={[51.422548, 35.732573]}
-                    showUserLocation={true}
-                    onLongPress={e => this.addMarker(e.geometry.coordinates)}
-                    style={styles.container}>
-                    <Mapir.Marker
-                        id={'1'}
-                        coordinate={[51.422548, 35.732573]}
-                    />
-                    {this.state.markers.map(markers =>
-                        (<Mapir.Marker
-                            id={'2'}
-                            key={markers.latitude}
-                            coordinate={[markers.latitude, markers.longitude ]}
-                        />)
-                    )}
-                </Mapir>
-            </View>
-        );
-    }
-}
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-    }
-});
-```
 
 
 
@@ -135,22 +80,22 @@ For more information about how to use MapView and other components such as **Add
 
 
 ### Components
-* [MapView](https://github.com/map-ir/mapir-mapbox/blob/master/docs/MapView.md)
-* [Light](https://github.com/map-ir/mapir-mapbox/blob/master/docs/Light.md)
-* [StyleSheet](https://github.com/map-ir/mapir-mapbox/blob/master/docs/StyleSheet.md)
-* [PointAnnotation](https://github.com/map-ir/mapir-mapbox/blob/master/docs/PointAnnotation.md)
-* [Callout](https://github.com/mapbox/map-ir/mapir-mapbox/blob/master/docs/Callout.md)
+* [MapView](https://github.com/mapbox/react-native-mapbox-gl/blob/master/docs/MapView.md)
+* [Light](https://github.com/mapbox/react-native-mapbox-gl/blob/master/docs/Light.md)
+* [StyleSheet](https://github.com/mapbox/react-native-mapbox-gl/blob/master/docs/StyleSheet.md)
+* [PointAnnotation](https://github.com/mapbox/react-native-mapbox-gl/blob/master/docs/PointAnnotation.md)
+* [Callout](https://github.com/mapbox/react-native-mapbox-gl/blob/master/docs/Callout.md)
 
 ### Sources
-* [VectorSource](https://github.com/map-ir/mapir-mapbox/blob/master/docs/VectorSource.md)
-* [ShapeSource](https://github.com/map-ir/mapir-mapbox/blob/master/docs/ShapeSource.md)
-* [RasterSource](https://github.com/map-ir/mapir-mapbox/blob/master/docs/RasterSource.md)
+* [VectorSource](https://github.com/mapbox/react-native-mapbox-gl/blob/master/docs/VectorSource.md)
+* [ShapeSource](https://github.com/mapbox/react-native-mapbox-gl/blob/master/docs/ShapeSource.md)
+* [RasterSource](https://github.com/mapbox/react-native-mapbox-gl/blob/master/docs/RasterSource.md)
 
 ### Layers
-* [BackgroundLayer](https://github.com/map-ir/mapir-mapbox/blob/master/docs/BackgroundLayer.md)
-* [CircleLayer](https://github.com/map-ir/mapir-mapbox/blob/master/docs/CircleLayer.md)
-* [FillExtrusionLayer](https://github.com/map-ir/mapir-mapbox/blob/master/docs/FillExtrusionLayer.md)
-* [FillLayer](https://github.com/map-ir/mapir-mapbox/blob/master/docs/FillLayer.md)
-* [LineLayer](https://github.com/map-ir/mapir-mapbox/blob/master/docs/LineLayer.md)
-* [RasterLayer](https://github.com/map-ir/mapir-mapbox/blob/master/docs/RasterLayer.md)
-* [SymbolLayer](https://github.com/map-ir/mapir-mapbox/blob/master/docs/SymbolLayer.md)
+* [BackgroundLayer](https://github.com/mapbox/react-native-mapbox-gl/blob/master/docs/BackgroundLayer.md)
+* [CircleLayer](https://github.com/mapbox/react-native-mapbox-gl/blob/master/docs/CircleLayer.md)
+* [FillExtrusionLayer](https://github.com/mapbox/react-native-mapbox-gl/blob/master/docs/FillExtrusionLayer.md)
+* [FillLayer](https://github.com/mapbox/react-native-mapbox-gl/blob/master/docs/FillLayer.md)
+* [LineLayer](https://github.com/mapbox/react-native-mapbox-gl/blob/master/docs/LineLayer.md)
+* [RasterLayer](https://github.com/mapbox/react-native-mapbox-gl/blob/master/docs/RasterLayer.md)
+* [SymbolLayer](https://github.com/mapbox/react-native-mapbox-gl/blob/master/docs/SymbolLayer.md)
