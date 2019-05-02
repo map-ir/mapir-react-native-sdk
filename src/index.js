@@ -11,7 +11,7 @@ const instructions = Platform.select({
     android: false,
 });
 
-class Mapir extends Component<{}> {
+class Mapir extends Component<> {
     static propTypes = {
         accessToken: PropTypes.string.isRequired
     };

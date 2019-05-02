@@ -228,7 +228,94 @@ const styles = StyleSheet.create({
     }
 });
 ```
+Here’s the complete code to display a map with Raster:
+```js
 
+import React, {Component} from 'react';
+import {Platform, StyleSheet, Text, View, Image} from 'react-native';
+import Mapir from 'mapir-react-native-sdk'
+
+type Props = {};
+export default class App extends Component<{}> {
+    constructor(props) {
+        super(props);
+        this.state = {
+            route:
+                {
+                    "type": "FeatureCollection",
+                    "features": [
+                        {
+                            "type": "Feature",
+                            "properties": {},
+                            "geometry": {
+                                "type": "LineString",
+                                "coordinates": [
+                                    [
+                                        51.422587,
+                                        35.732549
+                                    ],
+                                    [
+                                        51.442226,
+                                        35.695909
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                },
+        };
+    }
+    componentDidMount() {
+        {
+            PermissionsAndroid.requestMultiple(
+                [PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
+                    PermissionsAndroid.PERMISSIONS.ACCESS_COARSE_LOCATION],
+                {
+                    title: 'Give Location Permission',
+                    message: 'App needs location permission to find your position.'
+                }
+            ).then(granted => {
+                console.log(granted);
+                resolve();
+            }).catch(err => {
+                console.warn(err);
+                reject(err);
+            });
+        }
+    }
+
+    render() {
+        return (
+            <View style={styles.container}>
+                <Mapir
+                    accessToken={'adsfdfdfgfgfghfh'}
+                    zoomLevel={13}
+                    centerCoordinate={[51.422548, 35.732573]}
+                    showUserLocation={true}
+                    style={styles.container}>
+                    <Mapir.RasterSource>
+                        <Mapir.RasterLayer id="shiveh-layer"/>
+                    </Mapir.RasterSource>
+                    <Mapir.Marker
+                        id={'1'}
+                        coordinate={[51.422548, 35.732573]}
+                    />
+                   
+                    <Mapir.ShapeSource id='line1' shape={this.state.route}>
+                        <Mapir.LineLayer id='linelayer1' style={{lineColor:'red'}} />
+                    </Mapir.ShapeSource>
+                </Mapir>
+            </View>
+        );
+    }
+}
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+    }
+});
+```
 
 ## Documentation
 
