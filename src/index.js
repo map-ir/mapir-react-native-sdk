@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 import Marker from './../components/marker'
 import ShapeSource from './../components/shapeSource';
 import LineLayer from './../components/lineLayer';
+import RasterSource from './../components/RasterSource';
+import RasterLayer from './../components/RasterLayer';
 
 const instructions = Platform.select({
     ios: true,
@@ -21,7 +23,7 @@ class Mapir extends Component<> {
     }
 
     render() {
-        Mapbox.StyleURL.Street = `https://map.ir/vector/styles/main/main_mobile_style.json?access_token=${this.props.accessToken}`;
+        Mapbox.StyleURL.Street = `https://map.ir/vector/styles/main/main_mobile_style.json?x-api-key=${this.props.accessToken}`;
         return (
             <Mapbox.MapView
                 {...this.props}
@@ -38,5 +40,7 @@ class Mapir extends Component<> {
 Mapir.Marker = Marker
 Mapir.ShapeSource = ShapeSource
 Mapir.LineLayer = LineLayer
+Mapir.RasterSource = RasterSource
+Mapir.RasterLayer = RasterLayer
 
 export default Mapir

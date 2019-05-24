@@ -51,7 +51,7 @@ export default class App extends Component<{}> {
         return (
             <View style={styles.container}>
                 <Mapir
-		            accessToken={'YOUR ACCESS TOKEN'}
+		    accessToken={'YOUR ACCESS TOKEN'}
                     zoomLevel={13}
                     centerCoordinate={[51.422548, 35.732573]}
                     style={styles.container}>
@@ -203,7 +203,7 @@ export default class App extends Component<{}> {
         return (
             <View style={styles.container}>
                 <Mapir
-                    accessToken={'adsfdfdfgfgfghfh'}
+                    accessToken={'YOUR_ACCESS_TOKEN'}
                     zoomLevel={13}
                     centerCoordinate={[51.422548, 35.732573]}
                     showUserLocation={true}
@@ -288,12 +288,13 @@ export default class App extends Component<{}> {
         return (
             <View style={styles.container}>
                 <Mapir
-                    accessToken={'adsfdfdfgfgfghfh'}
+                    accessToken={'YOUR_ACCESS_TOKEN'}
                     zoomLevel={13}
                     centerCoordinate={[51.422548, 35.732573]}
                     showUserLocation={true}
                     style={styles.container}>
-                    <Mapir.RasterSource>
+                    <Mapir.RasterSource
+			            accessToken={'YOUR_ACCESS_TOKEN'}>
                         <Mapir.RasterLayer id="shiveh-layer"/>
                     </Mapir.RasterSource>
                     <Mapir.Marker
@@ -328,7 +329,7 @@ For more information about how to use MapView and other components such as **Add
 * [Light](https://github.com/map-ir/mapir-mapbox/blob/master/docs/Light.md)
 * [StyleSheet](https://github.com/map-ir/mapir-mapbox/blob/master/docs/StyleSheet.md)
 * [PointAnnotation](https://github.com/map-ir/mapir-mapbox/blob/master/docs/PointAnnotation.md)
-* [Callout](https://github.com/mapbox/map-ir/mapir-mapbox/blob/master/docs/Callout.md)
+* [Callout](https://github.com/map-ir/mapir-mapbox/blob/master/docs/Callout.md)
 
 ### Sources
 * [VectorSource](https://github.com/map-ir/mapir-mapbox/blob/master/docs/VectorSource.md)
