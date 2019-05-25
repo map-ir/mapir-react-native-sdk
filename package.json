@@ -169,7 +169,9 @@
     "istanbul": "^1.0.0-alpha"
   },
   "files": [
-    "src"
+    "src",
+    "components",
+    "assets"
   ],
   "keywords": [
     "mapir",
