@@ -27,11 +27,9 @@ class Mapir extends Component<> {
         if (Platform === 'android') {
             Mapbox.apiKey(this.props.accessToken)
         }
-        Mapbox.StyleURL.Street = `https://map.ir/vector/styles/main/main_mobile_style.json?x-api-key=${this.props.accessToken}`;
         return (
             <Mapbox.MapView
                 {...this.props}
-                styleURL={Mapbox.StyleURL.Street}
                 attributionEnabled={false}
                 logoEnabled={instructions}
                 maxZoomLevel={20}
