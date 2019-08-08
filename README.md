@@ -23,7 +23,7 @@ See [map.ir](http://corp.map.ir)
 
 * [node](https://nodejs.org)
 * [npm](https://www.npmjs.com/)
-* [React Native](https://facebook.github.io/react-native/) recommended version 0.50 or greater
+* [React Native](https://facebook.github.io/react-native/) recommended version 0.59
 
 **Npm**
 ```
@@ -320,8 +320,7 @@ const styles = StyleSheet.create({
 
 ## Documentation
 
-Mapir SDK is based on [Mapbox Maps SDK for React Native v6.1.3](https://github.com/mapbox/react-native-mapbox-gl) and provides extra API methods over Mapbox. 
-For more information about how to use MapView and other components such as **Adding Markers**, **Showing Current Location**, etc., please see [Mapbox for React Native First Steps](https://www.mapbox.com/help/first-steps-react-native-sdk/).
+Mapir SDK is based on [Mapbox Maps SDK for React Native v7.0.0](https://github.com/react-native-mapbox-gl/maps/tree/release-7.0.0-rc3) and provides extra API methods over Mapbox.
 
 
 ### Components
