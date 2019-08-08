@@ -23,7 +23,11 @@ See [map.ir](http://corp.map.ir)
 
 * [node](https://nodejs.org)
 * [npm](https://www.npmjs.com/)
+<<<<<<< HEAD
 * [React Native](https://facebook.github.io/react-native/) recommended version 0.50 or greater
+=======
+* [React Native](https://facebook.github.io/react-native/) recommended version 0.59
+>>>>>>> 49b2232f754cb9352080c43978f6254263fc0cd0
 
 **Npm**
 ```
@@ -320,12 +324,17 @@ const styles = StyleSheet.create({
 
 ## Documentation
 
+<<<<<<< HEAD
 Mapir SDK is based on [Mapbox Maps SDK for React Native v6.1.3](https://github.com/mapbox/react-native-mapbox-gl) and provides extra API methods over Mapbox. 
 For more information about how to use MapView and other components such as **Adding Markers**, **Showing Current Location**, etc., please see [Mapbox for React Native First Steps](https://www.mapbox.com/help/first-steps-react-native-sdk/).
+=======
+Mapir SDK is based on [Mapbox Maps SDK for React Native v7.0.0](https://github.com/react-native-mapbox-gl/maps/tree/release-7.0.0-rc3) and provides extra API methods over Mapbox.
+>>>>>>> 49b2232f754cb9352080c43978f6254263fc0cd0
 
 
 ### Components
 * [MapView](https://github.com/map-ir/mapir-mapbox/blob/master/docs/MapView.md)
+<<<<<<< HEAD
 * [Light](https://github.com/map-ir/mapir-mapbox/blob/master/docs/Light.md)
 * [StyleSheet](https://github.com/map-ir/mapir-mapbox/blob/master/docs/StyleSheet.md)
 * [PointAnnotation](https://github.com/map-ir/mapir-mapbox/blob/master/docs/PointAnnotation.md)
@@ -333,13 +342,25 @@ For more information about how to use MapView and other components such as **Add
 
 ### Sources
 * [VectorSource](https://github.com/map-ir/mapir-mapbox/blob/master/docs/VectorSource.md)
+=======
+* [Marker](https://github.com/map-ir/mapir-mapbox/blob/master/docs/PointAnnotation.md)
+* [Popup](https://github.com/map-ir/mapir-mapbox/blob/master/docs/Callout.md)
+* [Camera](https://github.com/map-ir/mapir-mapbox/blob/master/docs/Camera.md)
+* [UserLocation](https://github.com/map-ir/mapir-mapbox/blob/master/docs/UserLocation.md)
+* [Images](https://github.com/map-ir/mapir-mapbox/blob/master/docs/Images.md)
+
+### Sources
+>>>>>>> 49b2232f754cb9352080c43978f6254263fc0cd0
 * [ShapeSource](https://github.com/map-ir/mapir-mapbox/blob/master/docs/ShapeSource.md)
 * [RasterSource](https://github.com/map-ir/mapir-mapbox/blob/master/docs/RasterSource.md)
 
 ### Layers
+<<<<<<< HEAD
 * [BackgroundLayer](https://github.com/map-ir/mapir-mapbox/blob/master/docs/BackgroundLayer.md)
 * [CircleLayer](https://github.com/map-ir/mapir-mapbox/blob/master/docs/CircleLayer.md)
 * [FillExtrusionLayer](https://github.com/map-ir/mapir-mapbox/blob/master/docs/FillExtrusionLayer.md)
+=======
+>>>>>>> 49b2232f754cb9352080c43978f6254263fc0cd0
 * [FillLayer](https://github.com/map-ir/mapir-mapbox/blob/master/docs/FillLayer.md)
 * [LineLayer](https://github.com/map-ir/mapir-mapbox/blob/master/docs/LineLayer.md)
 * [RasterLayer](https://github.com/map-ir/mapir-mapbox/blob/master/docs/RasterLayer.md)
