@@ -8,6 +8,11 @@ import LineLayer from './../components/lineLayer';
 import RasterSource from './../components/RasterSource';
 import RasterLayer from './../components/RasterLayer';
 import Popup from "./../components/popup";
+import Camera from "./../components/Camera";
+import SymbolLayer from "./../components/SymbolLayer";
+import UserLocation from './../components/UserLocation';
+import Images from './../components/Images';
+import FillLayer from "./../components/fillLayer";
 
 const instructions = Platform.select({
     ios: true,
@@ -45,5 +50,10 @@ Mapir.LineLayer = LineLayer
 Mapir.RasterSource = RasterSource
 Mapir.RasterLayer = RasterLayer
 Mapir.Popup = Popup
+Mapir.Camera = Camera
+Mapir.SymbolLayer = SymbolLayer
+Mapir.UserLocation = UserLocation
+Mapir.Images = Images
+Mapir.FillLayer = FillLayer
 
 export default Mapir

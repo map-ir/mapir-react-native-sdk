@@ -326,20 +326,17 @@ For more information about how to use MapView and other components such as **Add
 
 ### Components
 * [MapView](https://github.com/map-ir/mapir-mapbox/blob/master/docs/MapView.md)
-* [Light](https://github.com/map-ir/mapir-mapbox/blob/master/docs/Light.md)
-* [StyleSheet](https://github.com/map-ir/mapir-mapbox/blob/master/docs/StyleSheet.md)
-* [PointAnnotation](https://github.com/map-ir/mapir-mapbox/blob/master/docs/PointAnnotation.md)
-* [Callout](https://github.com/map-ir/mapir-mapbox/blob/master/docs/Callout.md)
+* [Marker](https://github.com/map-ir/mapir-mapbox/blob/master/docs/PointAnnotation.md)
+* [Popup](https://github.com/map-ir/mapir-mapbox/blob/master/docs/Callout.md)
+* [Camera](https://github.com/map-ir/mapir-mapbox/blob/master/docs/Camera.md)
+* [UserLocation](https://github.com/map-ir/mapir-mapbox/blob/master/docs/UserLocation.md)
+* [Images](https://github.com/map-ir/mapir-mapbox/blob/master/docs/Images.md)
 
 ### Sources
-* [VectorSource](https://github.com/map-ir/mapir-mapbox/blob/master/docs/VectorSource.md)
 * [ShapeSource](https://github.com/map-ir/mapir-mapbox/blob/master/docs/ShapeSource.md)
 * [RasterSource](https://github.com/map-ir/mapir-mapbox/blob/master/docs/RasterSource.md)
 
 ### Layers
-* [BackgroundLayer](https://github.com/map-ir/mapir-mapbox/blob/master/docs/BackgroundLayer.md)
-* [CircleLayer](https://github.com/map-ir/mapir-mapbox/blob/master/docs/CircleLayer.md)
-* [FillExtrusionLayer](https://github.com/map-ir/mapir-mapbox/blob/master/docs/FillExtrusionLayer.md)
 * [FillLayer](https://github.com/map-ir/mapir-mapbox/blob/master/docs/FillLayer.md)
 * [LineLayer](https://github.com/map-ir/mapir-mapbox/blob/master/docs/LineLayer.md)
 * [RasterLayer](https://github.com/map-ir/mapir-mapbox/blob/master/docs/RasterLayer.md)
