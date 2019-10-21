@@ -3,7 +3,7 @@
 </a>
 
 # Mapir SDK for React Native
-
+[![npm version](https://badge.fury.io/js/mapir-react-native-sdk.svg)](https://badge.fury.io/js/mapir-react-native-sdk.svg)
 ## What is Mapir?
 See [map.ir](http://corp.map.ir)
 
