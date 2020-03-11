@@ -1,6 +1,6 @@
-import React, {Component} from './../../react'
-import Mapbox from './../../mapir-mapbox'
-import {Platform, View} from './../../react-native'
+import React, {Component} from 'react'
+import Mapbox from 'mapir-mapbox'
+import {Platform, View} from 'react-native'
 import PropTypes from 'prop-types';
 import Marker from './../components/marker'
 import ShapeSource from './../components/shapeSource';
@@ -29,7 +29,7 @@ class Mapir extends Component<> {
     }
 
     render() {
-        if (Platform === 'android') {
+        if (Platform.OS === 'android') {
             Mapbox.apiKey(this.props.accessToken)
         }
         return (

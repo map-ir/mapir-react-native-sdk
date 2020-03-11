@@ -1,10 +1,6 @@
 {
   "name": "mapir-react-native-sdk",
-<<<<<<< HEAD
-  "version": "1.7.0",
-=======
-  "version": "2.1.2",
->>>>>>> 49b2232f754cb9352080c43978f6254263fc0cd0
+  "version": "2.1.5",
   "main": "src/index.js",
   "_phantomChildren": {
     "@babel/core": "7.2.2",
@@ -54,11 +50,8 @@
     "@babel/plugin-transform-typescript": "7.2.0",
     "@babel/plugin-transform-unicode-regex": "7.2.0",
     "@babel/register": "7.0.0",
-<<<<<<< HEAD
-    "@babel/runtime": "7.2.0",
-=======
+
     "@babel/runtime": "7.0.0-beta.55",
->>>>>>> 49b2232f754cb9352080c43978f6254263fc0cd0
     "@babel/template": "7.2.2",
     "@babel/traverse": "7.2.3",
     "@babel/types": "7.2.2",
@@ -164,11 +157,8 @@
   "author": "reyhane masumi <r.masumi94@gmail.com>",
   "bundleDependencies": false,
   "dependencies": {
-<<<<<<< HEAD
-    "mapir-mapbox": "1.2.1"
-=======
-    "mapir-mapbox": "2.0.3"
->>>>>>> 49b2232f754cb9352080c43978f6254263fc0cd0
+
+    "mapir-mapbox": "2.0.6"
   },
   "deprecated": false,
   "devDependencies": {
@@ -191,12 +181,9 @@
     "npm",
     "module",
     "node",
-<<<<<<< HEAD
-    "javascript"
-=======
+
     "javascript",
     "mapir"
->>>>>>> 49b2232f754cb9352080c43978f6254263fc0cd0
   ],
   "license": "MIT",
   "repository": {
