@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import Mapbox from 'mapir-mapbox'
 import {Platform, View} from 'react-native'
 import PropTypes from 'prop-types';
+import axios from 'axios';
 import Marker from './../components/marker'
 import ShapeSource from './../components/shapeSource';
 import LineLayer from './../components/lineLayer';
@@ -21,16 +22,27 @@ const instructions = Platform.select({
 
 class Mapir extends Component<> {
     static propTypes = {
-        accessToken: PropTypes.string.isRequired
+        apiKey: PropTypes.string.isRequired
     };
 
     constructor(props) {
         super(props)
     }
 
+    componentDidMount() {
+		axios({
+			method: "GET",
+			url: `https://map.ir/vector/load?x-api-key=${this.props.apiKey}`
+		  }).then(function (res) {
+
+		  }).catch(function (err) {
+
+		  })
+	}
+
     render() {
         if (Platform.OS === 'android') {
-            Mapbox.apiKey(this.props.accessToken)
+            Mapbox.apiKey(this.props.apiKey)
         }
         return (
             <Mapbox.MapView

@@ -1,6 +1,6 @@
 {
   "name": "mapir-react-native-sdk",
-  "version": "2.1.5",
+  "version": "2.2.0",
   "main": "src/index.js",
   "_phantomChildren": {
     "@babel/core": "7.2.2",
@@ -139,7 +139,8 @@
     "xmldoc": "0.4.0",
     "xpipe": "1.0.5",
     "yargs": "9.0.1",
-    "prop-types": "15.6.2"
+    "prop-types": "15.6.2",
+    "axios": "^0.19.2"
   },
   "_requested": {
     "type": "tag",
@@ -157,7 +158,6 @@
   "author": "reyhane masumi <r.masumi94@gmail.com>",
   "bundleDependencies": false,
   "dependencies": {
-
     "mapir-mapbox": "2.0.6"
   },
   "deprecated": false,
