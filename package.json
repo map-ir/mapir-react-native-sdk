@@ -1,6 +1,6 @@
 {
   "name": "mapir-react-native-sdk",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "main": "src/index.js",
   "_phantomChildren": {
     "@babel/core": "7.2.2",
