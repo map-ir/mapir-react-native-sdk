@@ -14,7 +14,7 @@
 
 * [node](https://nodejs.org)
 * [npm](https://www.npmjs.com/)
-* [React Native](https://facebook.github.io/react-native/) recommended version 0.59
+* [React Native](https://facebook.github.io/react-native/) recommended version 0.62.2
 
 ```
 npm install mapir-react-native-sdk
