@@ -14,7 +14,7 @@
 
 * [node](https://nodejs.org)
 * [npm](https://www.npmjs.com/)
-* [React Native](https://facebook.github.io/react-native/) recommended version 0.62.2
+* [React Native](https://facebook.github.io/react-native/) recommended version ^0.62.2
 
 ```
 npm install mapir-react-native-sdk
@@ -32,32 +32,38 @@ npm install mapir-react-native-sdk
 
 ```js
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View, Image} from 'react-native';
+import { SafeAreaView, StyleSheet, View} from 'react-native';
 import Mapir from 'mapir-react-native-sdk'
 ```
 
 ### Generate Component
 ```jsx
-type Props = {};
-export default class App extends Component<{}> {
-    render() {
-        return (
-            <View style={styles.container}>
-                <Mapir
-		    apiKey={'YOUR API KEY'}
-                    zoomLevel={13}
-                    centerCoordinate={[51.422548, 35.732573]}
-                    style={styles.container}>
-                </Mapir>
-            </View>
-        );
-    }
+export default function App() {
+  onRegionDidChange = (e) => {
+    console.log('onRegionDidChange', e.geometry.coordinates);
+  };
+  return (
+    <SafeAreaView style={styles.container}>
+      <View style={styles.container}>
+        <Mapir
+          apiKey={'YOUR_MAPIR_API_KEY'}
+          onRegionDidChange={(e) => onRegionDidChange(e)}
+          style={styles.container}
+        >
+          <Mapir.Camera
+            zoomLevel={13}
+            centerCoordinate={[51.422548, 35.732573]}
+          />
+        </Mapir>
+      </View>
+    </SafeAreaView>
+  );
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-    }
+  container: {
+    flex: 1,
+  },
 });
 ```
 
