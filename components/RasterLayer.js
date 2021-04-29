@@ -1,21 +1,15 @@
-import React, {Component} from './../../react'
-import Mapbox from './../../mapir-mapbox'
+import React, { Component } from 'react';
+import Mapbox from 'mapir-mapbox';
 import PropTypes from 'prop-types';
 
 class RasterLayer extends Component<{}> {
+  constructor(props) {
+    super(props);
+  }
 
-    constructor(props) {
-        super(props)
-    }
-
-    render() {
-        return (
-            <Mapbox.RasterLayer
-                {...this.props}
-            >
-            </Mapbox.RasterLayer>
-        )
-    }
+  render() {
+    return <Mapbox.RasterLayer {...this.props}></Mapbox.RasterLayer>;
+  }
 }
 
-export default RasterLayer
+export default RasterLayer;
