@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Mapbox from 'mapir-mapbox';
 import PropTypes from 'prop-types';
 
-class Camera extends Component<{}> {
+class Camera extends Component {
   constructor(props) {
     super(props);
   }

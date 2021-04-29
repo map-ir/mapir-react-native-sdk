@@ -3,7 +3,7 @@ import Mapbox from 'mapir-mapbox';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 
-class RasterSource extends Component<{}> {
+class RasterSource extends Component {
   static propTypes = {
     apiKey: PropTypes.string.isRequired,
   };

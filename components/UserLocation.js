@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Mapbox from 'mapir-mapbox';
 import PropTypes from 'prop-types';
 
-class UserLocation extends Component<{}> {
+class UserLocation extends Component {
   constructor(props) {
     super(props);
   }

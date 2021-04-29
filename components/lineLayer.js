@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Mapbox from 'mapir-mapbox';
 import PropTypes from 'prop-types';
 
-class LineLayer extends Component<{}> {
+class LineLayer extends Component {
   constructor(props) {
     super(props);
   }
